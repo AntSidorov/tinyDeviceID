@@ -1,46 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <TableLayout
-        android:id="@+id/tableLayout1"
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:stretchColumns="1">
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        android:gravity="center_horizontal"
+        android:text="Your DeviceID:"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        android:textStyle="bold"></TextView>
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Your DeviceID:"></TextView>
+    <EditText
+        android:id="@+id/DeviceID"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:gravity="center_horizontal"
+        android:inputType="none"
+        android:textSize="24sp"
+        android:textStyle="bold">
 
-            <EditText
-                android:id="@+id/DeviceID"
-                style="@android:style/Widget.DeviceDefault.EditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:inputType="none"
-                android:autofillHints="">
+    </EditText>
 
-                <requestFocus></requestFocus>
-            </EditText>
-
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </TableRow>
-    </TableLayout>
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Close" />
 
 </LinearLayout>
